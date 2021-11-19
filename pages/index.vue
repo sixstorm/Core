@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-800 text-white">
-    <NuxtLink to="/">Core</NuxtLink>
+    <NuxtLink to="/" class="text-4xl p-2.5">Core</NuxtLink>
     <h1 class="p-2.5 text-4xl"><u>Blog Posts</u></h1>
     <br />
     <ul class="flex">
@@ -8,8 +8,8 @@
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <div>
             <h2 class="p-2.5">{{ article.title }}</h2>
-            <p>{{ article.description }}</p>
-            <p>{{ article.slug }}</p>
+            <!-- <p>{{ article.description }}</p> -->
+            <p class="p-2.5">{{ article.slug }}</p>
             <br />
           </div>
         </NuxtLink>
