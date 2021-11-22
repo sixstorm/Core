@@ -29,5 +29,14 @@ export default {
 
     return { articles }
   },
+
+  async techData({ $content, params }) {
+    const techArticles = await $content('tech')
+      .sortBy('createdat', 'asc')
+      .limit(1)
+      .fetch()
+
+    return (techArticles)
+  },
 }
 </script>

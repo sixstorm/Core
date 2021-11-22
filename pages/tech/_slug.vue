@@ -1,9 +1,8 @@
 <script>
     export default {
         async asyncData({ $content, params }) {
-            const techArticle = await $content('tech', params.slug).fetch()
-
-            return { techArticle }
+            const techArticles = await $content('tech', params.slug).fetch()
+            return { techArticles }
         }
     }
 </script>
@@ -19,3 +18,19 @@
         </article>
     </div>
 </template>
+
+<style>
+    .nuxt-content h1 {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .nuxt-content h3 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .nuxt-content p {
+        margin-bottom: 20px;
+    }
+</style>

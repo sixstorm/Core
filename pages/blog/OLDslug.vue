@@ -2,11 +2,6 @@
     export default {
         async asyncData({ $content, params }) {
             const article = await $content('articles', params.slug).fetch()
-            // const tagList = await $content('tags')
-                // .only(['name','slug'])
-                // .where({ name: { containsAny: article.tags } })
-                // .fetch()
-            // const tags = Object.assign({}, ...tagList.map((s) => ({ [s.name]: s })))
             return { article }
         }
     }
