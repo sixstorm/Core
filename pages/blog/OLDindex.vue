@@ -21,12 +21,18 @@
 <script>
 export default {
     async asyncData({ $content, params }) {
-        const articles = await $content('articles')
+        const articles = await $content('blog')
             .sortBy('createdat', 'asc')
             .fetch()
 
         return { articles }
-    }
+    },
+
+    head() {
+            return {
+                title: 'Blog'
+            };
+        }
 }
 </script>
 

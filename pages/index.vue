@@ -7,6 +7,18 @@
     <div class="bg-gray-800 text-white pt-2 pr-2 flex justify-right">
       <NuxtLink to="/blog" class="text-2xl p-2.5">Blog</NuxtLink>
     </div>
+    <div class="bg-gray-800 text-white pt-2 pr-2 flex justify-right">
+      <NuxtLink to="/books" class="text-2xl p-2.5">Books</NuxtLink>
+    </div>
+    <div class="bg-gray-800 text-white pt-2 pr-2 flex justify-right">
+      <NuxtLink to="/movies" class="text-2xl p-2.5">Movies</NuxtLink>
+    </div>
+    <div class="bg-gray-800 text-white pt-2 pr-2 flex justify-right">
+      <NuxtLink to="/tech" class="text-2xl p-2.5">Tech</NuxtLink>
+    </div>
+    <div class="bg-gray-800 text-white pt-2 pr-2 flex justify-right">
+      <NuxtLink to="/wiki" class="text-2xl p-2.5">Wiki</NuxtLink>
+    </div>
   </div>
 
   <div class="bg-gray-800 text-white flex justify-center items-center h-screen flex-row">
@@ -38,7 +50,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('articles')
+    const articles = await $content('blog')
       //   .only(['title'])
       .sortBy('createdat', 'asc')
       .limit(1)
@@ -47,13 +59,10 @@ export default {
     return { articles }
   },
 
-  async techData({ $content, params }) {
-    const techArticles = await $content('tech')
-      .sortBy('createdat', 'asc')
-      .limit(1)
-      .fetch()
-
-    return (techArticles)
-  },
+  head() {
+            return {
+                title: 'Core'
+            };
+        }
 }
 </script>
