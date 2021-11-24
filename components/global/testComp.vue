@@ -1,8 +1,8 @@
 <template>
 <div>
     <ul>
-        <a :href="`/blog/${post.slug}`"></a>
-        <li v-for="tag in post.tag" :key="tag">{{ tag }}</li>
+        <a :href="`/blog/${post.slug}`">{{ post.title }}</a>
+        <li v-for="tag in post.tags" :key="tag">{{ tag }}</li>
     </ul>
 </div>
 </template>
