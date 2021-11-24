@@ -7,6 +7,7 @@
                 </NuxtLink>
             </li>
         </ul>
+        <testComp v-for="article in articles" :key="article.slug" :post="article"></testComp>
     </div>
 </template>
 
