@@ -8,7 +8,7 @@
             </li>
         </ul> -->
         <ul>
-            <getarticles v-for="article in articles" :key="article.slug" :post="article"></getarticles>
+            <getarticles class="mb-3 mt-3" v-for="article in articles" :key="article.slug" :post="article"></getarticles>
         </ul>
     </div>
 </template>
