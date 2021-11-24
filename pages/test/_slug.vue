@@ -1,7 +1,12 @@
 <template>
-    <article>
+    <!-- <article>
         <nuxt-content :document="article" />
-    </article>
+    </article> -->
+    <div>
+      <ul>
+      <testComp v-for="article in articles" :key="article.slug" :post="article"></testComp>
+      </ul>
+    </div>
     
 </template>
 
