@@ -1,13 +1,15 @@
 <template>
     <div class="bg-gray-800 text-white flex flex-col justify-center items-center h-screen">
-        <ul class='flex flex-col text-center'>
+        <!-- <ul class='flex flex-col text-center'>
             <li v-for="article of articles" :key="article.slug">
                 <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
                     <h2 class="p-2.5">{{ article.title }}</h2>
                 </NuxtLink>
             </li>
+        </ul> -->
+        <ul>
+            <getarticles v-for="article in articles" :key="article.slug" :post="article"></getarticles>
         </ul>
-        <testComp v-for="article in articles" :key="article.slug" :post="article"></testComp>
     </div>
 </template>
 
