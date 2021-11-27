@@ -4,9 +4,17 @@
 
 // Vars
 $family-sans-serif: "Abel";
-$black: #282828;
+$black: #2f3030;
+$charcoal: #213130;
+$bluegray: #7b88a0;
+$babyblue: #bccbe0;
+$slate: #8a9ea1;
+$ivory: #f4f4f6;
 
-$background: $black;
+$body-background-color: $black;
+$text: $ivory;
+$link: $bluegray;
+$link-visited: $babyblue;
 
 // Import bulma styles
 @import "~bulma";
