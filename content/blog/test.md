@@ -1,19 +1,9 @@
 ---
-title: "Test from Nuxt"
-description: "Test Change in the description of this post"
+title: "Test Markdown File"
+description: "Put your testing crap here"
 tags: ['testing']
 ---
-<div>
-<br>
+
 # Hello from Nuxt.Js!
 
-<br>
-This would be some cool content here
-
-<br>
-<infobox>
-    <template #infobox>
-        Infobox with important stuff
-    </template>
-</infobox>
-</div>
+This is a sample test markdown page that should show some amazing content because I'm so good at writing!

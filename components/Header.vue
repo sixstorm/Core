@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="level is-size-3">
+        <nav class="level is-size-4 mt-4 mb-4">
             <nuxt-link to="/" class="level-item has-text-centered">Core</nuxt-link>
             <nuxt-link to="/tech" class="level-item has-text-centered">Tech</nuxt-link>
             <nuxt-link to="/blog" class="level-item has-text-centered">Blog</nuxt-link>
