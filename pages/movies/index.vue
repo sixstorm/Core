@@ -1,33 +1,43 @@
 <template>
-    <div class="bg-gray-800 text-white pt-2 pl-2">
-        <NuxtLink to="/" class="text-4xl p-2.5">Core</NuxtLink>
-        <div class="bg-gray-800 text-white flex justify-center items-center h-screen flex-col">
-            <ul class="flex">
-            <li v-for="article of articles" :key="article.slug">
-                <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+    <div class="container has-text-centered">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-narrow">
                 <div>
-                    <h2 class="p-2.5">{{ article.title }}</h2>
-                    <!-- <p>{{ article.description }}</p> -->
-                    <p class="p-2.5">{{ article.slug }}</p>
-                    <br />
+                    <h2 class="is-size-3">Movies</h2>
                 </div>
-                </NuxtLink>
-            </li>
-            </ul>
+                <br>
+
+                <table class="table is-bordered is-hoverable">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>2021</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.imdb.com/title/tt2911666/">John Wick</a></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.imdb.com/title/tt4425200/">John Wick 2</a></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.imdb.com/title/tt6146586/">John Wick 3</a></td>
+                            <td class=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    head() {
-            return {
-                title: 'Movies'
-            };
-        }
+    
 }
 </script>
-
-<style>
-
-</style>

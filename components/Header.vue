@@ -7,6 +7,8 @@
             <nuxt-link to="/movies" class="level-item has-text-centered">Movies</nuxt-link>
             <nuxt-link to="/books" class="level-item has-text-centered">Books</nuxt-link>
         </nav>
+        <br>
+        <br>
     </header>        
 </template>
 

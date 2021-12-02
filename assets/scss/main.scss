@@ -4,20 +4,30 @@
 
 // Vars
 $family-sans-serif: "Abel";
-$black: #2f3030;
+$jetblack: #2f3030;
+$eerieblack: #181717;
 $charcoal: #213130;
+$onyx: #3b3d3d;
 $bluegray: #7b88a0;
 $babyblue: #bccbe0;
 $slate: #8a9ea1;
 $ivory: #f4f4f6;
-$red: #F76F8E;
+$plum: #76211b;
+$cadetblue: #A9B4C2;
 
-$body-background-color: $black;
+// Basic Settings
+$body-background-color: $onyx;
 $text: $ivory;
 $link: $bluegray;
 $link-visited: $babyblue;
 $link-hover: $babyblue;
 $content-heading-color: $slate;
+
+// Table Settings
+$table-background-color: $jetblack;
+// $table-cell-heading-color: $cadetblue;  // Heading text color
+$table-color: $bluegray;
+// $table-striped-row-even-background-color: $bluegray;
 
 // Import bulma styles
 @import "~bulma";
