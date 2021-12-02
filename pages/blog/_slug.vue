@@ -10,7 +10,7 @@
             </div>
         </div>
         <div v-else>
-            <show-article v-bind:article="articles"></show-article>
+            <show-article class="is-full-height" v-bind:article="articles"></show-article>
         </div>
     </div>
 </template>
