@@ -23,11 +23,11 @@ Here is a current list of playbooks that I use and what they do:
 
 Run a Playbook on all servers:
 
-> sudo ansible-playbook checkforupdates.yaml -i servers -u USERNAME -K
+```sudo ansible-playbook checkforupdates.yaml -i servers -u USERNAME -K```
 
 Run a Playbook on only one server:
 
-> sudo ansible-playbook install.yaml SERVER -u USERNAME -K
+```sudo ansible-playbook install.yaml SERVER -u USERNAME -K```
 
 
 

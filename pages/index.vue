@@ -1,9 +1,11 @@
 <template>
-  <div class="is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+  <div class="is-vcentered has-text-centered">
+
+    <div class="mt-5"><img src="~/assets/minwall.jpg" alt=""></div>
   
     <div>
       <div>
-        <h1><u>Latest Blog Post</u></h1>
+        <h1 class="is-size-4">Latest Blog Post</h1>
         <br />
         <ul>
           <li v-for="article of articles" :key="article.slug">
@@ -11,7 +13,7 @@
               <div>
                 <h2>{{ article.title }}</h2>
                 <!-- <p>{{ article.description }}</p> -->
-                <p>{{ article.slug }}</p>
+                <p>{{ article.description }}</p>
                 <br />
               </div>
             </NuxtLink>
@@ -20,8 +22,8 @@
       </div>
 
       <div>
-        <h2>Latest Thought</h2>
-        <p>Something should go here...</p>
+        <h2 class="is-size-5">Latest Thought</h2>
+        <p class="is-size-6">Rules for Thee, not for me.</p>
       </div>
     </div>
   </div>

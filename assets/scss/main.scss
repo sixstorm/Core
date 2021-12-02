@@ -10,11 +10,14 @@ $bluegray: #7b88a0;
 $babyblue: #bccbe0;
 $slate: #8a9ea1;
 $ivory: #f4f4f6;
+$red: #F76F8E;
 
 $body-background-color: $black;
 $text: $ivory;
 $link: $bluegray;
 $link-visited: $babyblue;
+$link-hover: $babyblue;
+$content-heading-color: $slate;
 
 // Import bulma styles
 @import "~bulma";
