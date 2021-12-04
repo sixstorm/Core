@@ -29,8 +29,18 @@ $table-head-background-color: $silver;
 // Import bulma styles
 @import "~bulma";
 
-h1,
-h2,
+// # in Markdown
+h1 {
+    color: $mandarin;
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+
+// ## in Markdown
+h2 {
+    color: $silver;
+    font-size: 20px;
+}
 h3,
 h4 {
     a {
@@ -39,3 +49,34 @@ h4 {
         }
     }
 }
+
+// Normal text
+p {
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+// Navbar Stuff
+.navbar {
+    background-color: $spacecadet;
+}
+
+.navbar-item {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+// Image Stuff
+.book_cover {
+    // width: 50%;
+    // height: 80%;
+    border: 5px $silver;
+}
+
+.current_book {
+    border: 5px $mandarin;
+}
+
+

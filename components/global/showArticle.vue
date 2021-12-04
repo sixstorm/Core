@@ -1,12 +1,20 @@
 <template>
     <div>
-        <ul>
-            <h1 class="is-size-2">
-                {{ article.title }}
-            </h1>
-            <h2 class="is-size-4">{{ article.description }}</h2>
-            <Nuxt-Content class="content is-medium is-vcentered mt-5" :document="article" />
-        </ul>
+        <section>
+            <div class="container">
+                <div class="content">
+                    <article>
+                        <div class="mb-6">
+                            <h1>{{ article.title }}</h1>
+                            <h5>{{ article.description }}</h5>
+                        </div>
+                        <div class="nuxt-content">
+                            <Nuxt-Content :document="article" />
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -17,4 +25,6 @@ export default {
 </script>
 
 <style>
+
+
 </style>

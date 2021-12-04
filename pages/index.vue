@@ -1,31 +1,18 @@
 <template>
-  <div class="is-vcentered has-text-centered">
-
-    <div class="mt-5"><img src="~/assets/minwall.jpg" alt=""></div>
-  
-    <div>
-      <div>
-        <h1 class="is-size-4">Latest Blog Post</h1>
-        <br />
+  <div>
+    <section>
+      <div class="container has-text-centered">
+        <img class="pb-6" src="~/assets/minwall.jpg" alt="">
+        <h1>Latest Blog Post</h1>
         <ul>
           <li v-for="article of articles" :key="article.slug">
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-              <div>
-                <h2>{{ article.title }}</h2>
-                <!-- <p>{{ article.description }}</p> -->
-                <p>{{ article.description }}</p>
-                <br />
-              </div>
+              <h2>{{ article.title }}</h2>
             </NuxtLink>
           </li>
         </ul>
       </div>
-
-      <div>
-        <h2 class="is-size-5">Latest Thought</h2>
-        <p class="is-size-6">Rules for Thee, not for me.</p>
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 

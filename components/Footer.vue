@@ -1,9 +1,9 @@
 <template>
-    <div class="columns">
-        <footer class="column has-text-centered mt-4 pt-4">
+    <section class="section">
+        <div class="container has-text-centered">
             <p>teamtuck 2021</p>
-        </footer>
-    </div>
+        </div>
+    </section>
 </template>
 
 <style>

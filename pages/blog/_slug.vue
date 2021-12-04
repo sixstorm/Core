@@ -1,5 +1,21 @@
 <template>
-    <div class="is-vcentered has-text-centered">
+    <div>
+        <section>
+            <div class="container has-text-centered">
+                <div v-if="Array.isArray(articles)">
+                    <ul v-for="article of articles" :key="article.slug">
+                        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+                            <h2>{{ article.title }}</h2>
+                        </NuxtLink>
+                    </ul>
+                </div>
+                <div v-else>
+                    <show-article v-bind:article="articles"></show-article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <div class="is-vcentered has-text-centered">
         <div v-if="Array.isArray(articles)">
             <div class="column">
                 <ul v-for="article of articles" :key="article.slug">
@@ -10,9 +26,9 @@
             </div>
         </div>
         <div v-else>
-            <show-article class="is-full-height" v-bind:article="articles"></show-article>
+            <show-article v-bind:article="articles"></show-article>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
