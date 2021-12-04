@@ -32,14 +32,14 @@ $table-head-background-color: $silver;
 // # in Markdown
 h1 {
     color: $mandarin;
-    font-size: 35px;
+    font-size: 40px;
     padding-bottom: 1rem;
 }
 
 // ## in Markdown
 h2 {
     color: $silver;
-    font-size: 20px;
+    font-size: 30px;
 }
 h3,
 h4 {
@@ -48,6 +48,9 @@ h4 {
             width: 0px;
         }
     }
+}
+h5 {
+    font-size: 25px;
 }
 
 // Normal text

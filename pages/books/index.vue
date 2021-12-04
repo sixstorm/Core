@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <section>
+            <h1 class="has-text-centered">Last 5 Books I've Read</h1>
             <div class="columns is-centered is-multiline">
                 <div class="column is-one-quarter">
                     <a href="https://www.amazon.com/Stillness-Key-Ryan-Holiday/dp/0525538585/ref=sr_1_1?crid=21X4O52NQMARB&keywords=stillness+is+the+key+ryan+holiday&qid=1638459763&sprefix=stillness%2Caps%2C169&sr=8-1"><img class="book_cover current_book" src="~/assets/stillnesskey.jpg" alt=""></a>
