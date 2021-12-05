@@ -1,18 +1,16 @@
 <template>
-    <div class="container">
+    <div class="container has-text-centered">
         <section>
-            <h1 class="has-text-centered">Movies I've Watched Recently</h1>
-            <table class="table is-bordered is-hoverable">
+            <h1>Movies I've Watched Recently</h1>
+            <table class="table is-bordered is-hoverable is-narrow is-fullwidth is-size-5">
                 <thead>
                     <tr>
                         <th>Title</th>
-                        <th>Year</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://www.imdb.com/title/tt2911666/">John Wick</a></td>
-                        <td class=""></td>
+                        <td><a href="https://www.imdb.com/title/tt3228774/">Cruella</a></td>
                     </tr>
                 </tbody>
             </table>
