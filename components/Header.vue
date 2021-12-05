@@ -1,5 +1,5 @@
 <template>
-    <nav class="level">
+    <nav class="level navbar is-spaced">
         <div class="level-left has-text-centered">
             <a class="level-item navbar-item" href="/">Core</a>
         </div>
