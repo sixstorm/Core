@@ -1,16 +1,18 @@
 <template>
     <section>
-        <div class="container has-text-centered">
-            <h1>Tech Articles</h1>
-            <div v-if="Array.isArray(articles)">
-                <ul v-for="article of articles" :key="article.slug">
-                    <NuxtLink :to="{ name: 'tech-slug', params: { slug: article.slug } }">
-                        <h2>{{ article.title }}</h2>
-                    </NuxtLink>
-                </ul>
-            </div>
-            <div v-else>
-                <show-article v-bind:article="articles"></show-article>
+        <div class="columns is-centered">
+            <div class="column is-four-fifths">
+                <h1>Tech Articles</h1>
+                <div v-if="Array.isArray(articles)">
+                    <ul v-for="article of articles" :key="article.slug">
+                        <NuxtLink :to="{ name: 'tech-slug', params: { slug: article.slug } }">
+                            <h2>{{ article.title }}</h2>
+                        </NuxtLink>
+                    </ul>
+                </div>
+                <div v-else>
+                    <show-article v-bind:article="articles"></show-article>
+                </div>
             </div>
         </div>
     </section>

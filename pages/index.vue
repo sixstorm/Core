@@ -1,9 +1,10 @@
 <template>
   <div>
     <section>
-      <div class="container has-text-centered">
-        <img class="pb-6" src="~/assets/minwall.jpg" alt="">
-        <h1>Latest Blog Post</h1>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <!-- <img src="~/assets/minwall2.jpg" alt=""> -->
+          <h1>Latest Blog Post</h1>
         <ul>
           <li v-for="article of articles" :key="article.slug">
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
@@ -11,6 +12,7 @@
             </NuxtLink>
           </li>
         </ul>
+        </div>
       </div>
     </section>
   </div>
