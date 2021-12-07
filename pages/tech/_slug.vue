@@ -12,14 +12,6 @@
                         </ul>
                     </div>
                     <div v-else>
-                        <div>
-                            <nav class="breadcrumb">
-                                <ul>
-                                    <li><a href="/">Core</a></li>
-                                    <li><a href="#">Something</a></li>
-                                </ul>
-                            </nav>
-                        </div>
                         <show-article v-bind:article="content"></show-article>
                     </div>
                 </div>

@@ -2,6 +2,12 @@
     <div>
         <section>
             <div class="container">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li><a href="/">Core</a></li>
+                        <li><a href="#">{{ article.title }}</a></li>
+                    </ul>
+                </nav>
                 <article>
                     <div class="mb-6">
                         <h1>{{ article.title }}</h1>
