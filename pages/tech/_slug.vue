@@ -4,8 +4,8 @@
             <div class="columns is-centered">
                 <div class="column is-four-fifths">
                     <h1>Tech Articles</h1>
-                    <div v-if="Array.isArray(articles)">
-                        <ul v-for="article of articles" :key="article.slug">
+                    <div v-if="Array.isArray(content)">
+                        <ul v-for="article of content" :key="article.slug">
                             <NuxtLink :to="{ name: 'tech-slug', params: { slug: article.slug } }">
                                 <h2>{{ article.title }}</h2>
                             </NuxtLink>
@@ -20,7 +20,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <show-article v-bind:article="articles"></show-article>
+                        <show-article v-bind:article="content"></show-article>
                     </div>
                 </div>
             </div>
@@ -33,11 +33,11 @@ import showArticle from '../../components/global/showArticle.vue';
     export default {
     components: { showArticle },
         async asyncData({ $content, params }) {
-            const articles = await $content('tech', params.slug)
+            const content = await $content('tech', params.slug)
                 .sortBy('title')
                 .fetch()
 
-            return { articles }
+            return { content }
         },
 
         head() {
