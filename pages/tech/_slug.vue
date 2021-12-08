@@ -3,8 +3,8 @@
         <section>
             <div class="columns is-centered">
                 <div class="column is-four-fifths">
-                    <h1>Tech Articles</h1>
                     <div v-if="Array.isArray(content)">
+                        <h1>Tech Articles</h1>
                         <ul v-for="article of content" :key="article.slug">
                             <NuxtLink :to="{ name: 'tech-slug', params: { slug: article.slug } }">
                                 <h2>{{ article.title }}</h2>

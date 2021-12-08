@@ -4,8 +4,9 @@
             <div class="container">
                 <nav class="breadcrumb">
                     <ul>
-                        <li><a href="/">Core</a></li>
-                        <li><a href="#">{{ article.title }}</a></li>
+                        <li><Nuxt-Link to="/">Core</Nuxt-Link></li>
+                        <li><Nuxt-Link to="#">{{ article.dir }}</Nuxt-Link></li>
+                        <li><Nuxt-Link to="#">{{ article.title }}</Nuxt-Link></li>
                     </ul>
                 </nav>
                 <article>
