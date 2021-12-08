@@ -21,9 +21,7 @@
 </template>
 
 <script>
-import showArticle from '../../components/global/showArticle.vue';
     export default {
-    components: { showArticle },
         async asyncData({ $content, params }) {
             const content = await $content('tech', params.slug)
                 .sortBy('title')
