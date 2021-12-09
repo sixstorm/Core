@@ -12,6 +12,11 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Harry Potter and the Sorcerer's Stone</td>
+                            <td><a href="https://www.imdb.com/title/tt0241527/">IMDB</a></td>
+                        </tr>
+                        <tr>
+                        <tr>
                             <td>Home Alone</td>
                             <td><a href="https://www.imdb.com/title/tt0099785/">IMDB</a></td>
                         </tr>
