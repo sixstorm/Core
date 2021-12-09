@@ -1,7 +1,7 @@
 <template>
 <div>
     <div>
-        <showMovies2 />
+        <showMovies />
     </div>
 </div>
 </template>
