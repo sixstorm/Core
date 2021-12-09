@@ -9,7 +9,7 @@ Doom Eternal has been such an amazing game.  It's one of my [favorite games](htt
 
 It can be frustrating when you play for so long and your progress can seem to be slowly getting better or getting worse.  I can recall days where I couldn't get past the first two levels without dying in a really stupid way.  The struggle is real but it is something that can be overcome with time, patience and persistence.  There is no jumping into the game and "git gud", you have to put the time into becoming a "black belt" as Hugo Martin, the game director for Doom Eternal, would say.
 
-<!-- ![](https://teamtuck.xyz/blog/DEUN.png) -->
+![Doom](/images/DEUN.png)
 
 # Failure
 

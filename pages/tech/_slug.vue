@@ -28,12 +28,6 @@
                 .fetch()
 
             return { content }
-        },
-
-        head() {
-            return {
-                title: 'Tech'
-            }
         }
     }
 </script>
