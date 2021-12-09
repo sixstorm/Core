@@ -1,9 +1,9 @@
 <template>
 <div>
     <div v-for="movie in movies" :key="movie.title">
-        <listMovies v-bind:movie="movies">
+        <showMovies v-bind:movie="movies">
             <p>{{ movie.title }}</p>
-        </listMovies>
+        </showMovies>
     </div>
 </div>
 </template>
