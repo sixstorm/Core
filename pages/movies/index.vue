@@ -12,6 +12,10 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Home Alone</td>
+                            <td><a href="https://www.imdb.com/title/tt0099785/">IMDB</a></td>
+                        </tr>
+                        <tr>
                             <td>Cruella</td>
                             <td><a href="https://www.imdb.com/title/tt3228774/">IMDB</a></td>
                         </tr>
