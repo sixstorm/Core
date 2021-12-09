@@ -1,16 +1,17 @@
 <template>
     <div>
-        <table>
+        <h1 class="is-centered">MOVIES!</h1>
+        <table class="table is-bordered is-hoverable is-fullwidth">
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Link</th>
+                    <th style="text-align:left">Title</th>
+                    <th style="text-align:left">Link</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="(item, key) of movies" :key="key">
                     <td>{{ item.title }}</td>
-                    <td><a href="{{ item.link }}">IMDB</a></td>
+                    <td><a href="#">{{ item.link }}</a></td>
                 </tr>
             </tbody>
         </table>
