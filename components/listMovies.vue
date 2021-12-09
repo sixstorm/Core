@@ -9,9 +9,6 @@
 
 <script>
     export default {
-        async asyncData ({ $content }) {
-            const movies = await $content('movies/movies').fetch()
-            return { movies }
-        }
+        props: ['movie']
     }
 </script>
