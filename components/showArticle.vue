@@ -2,7 +2,6 @@
     <div>
         <section>
             <div class="container">
-                <showBC />
                 <article>
                     <div class="mb-6">
                         <h1 class="has-text-centered-mobile">{{ article.title }}</h1>
@@ -19,28 +18,7 @@
 
 <script>
 export default {
-    props: ['article'],
-    computed : {
-        sect : function() {
-            if(this.dir == "/blog") {
-                return 
-            }
-        },
-        blog : function() {
-            if(this.dir == "/blog") {
-                return true
-            } else {
-                return false
-            }
-        },
-        tech : function() {
-            if(this.dir = "/tech") {
-                return true
-            } else {
-                return false
-            }
-        }
-    }
+    props: ['article']
 }
 </script>
 
