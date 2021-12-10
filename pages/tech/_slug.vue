@@ -12,6 +12,7 @@
                         </ul>
                     </div>
                     <div v-else>
+                        <showBC v-bind:article="content"></showBC>
                         <show-article v-bind:article="content"></show-article>
                     </div>
                 </div>
