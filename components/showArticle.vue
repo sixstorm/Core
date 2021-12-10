@@ -5,12 +5,8 @@
                 <nav class="breadcrumb">
                     <ul>
                         <li><Nuxt-Link to="/">Core</Nuxt-Link></li>
-                        <div v-if="blog" :blog="blog">
-                            <li><Nuxt-Link to="/blog">Blog</Nuxt-Link></li>
-                        </div>
-                        <div v-if="tech" :tech="tech">
-                            <li><Nuxt-Link to="/tech">Tech</Nuxt-Link></li>
-                        </div>
+                        <li v-if="article.dir =='/blog'"><Nuxt-Link to="/blog">Blog</Nuxt-Link></li>
+                        <li v-if="article.dir =='/tech'"><Nuxt-Link to="/tech">Tech</Nuxt-Link></li>
                         <li v-if="$device.isDesktop"><Nuxt-Link to="#">{{ article.title }}</Nuxt-Link></li>
                     </ul>
                 </nav>
@@ -32,8 +28,13 @@
 export default {
     props: ['article'],
     computed : {
+        sect : function() {
+            if(this.dir == "/blog") {
+                return 
+            }
+        },
         blog : function() {
-            if(this.dir = "/blog") {
+            if(this.dir == "/blog") {
                 return true
             } else {
                 return false
