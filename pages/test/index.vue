@@ -1,16 +1,14 @@
 <template>
 <section>
-    <div class="columns is-centered">
-        <div class="column is-four-fifths">
-            <h1>Movies I've Watched Recently</h1>
-            <showMovies />
-        </div>
+    <div>
+        <h1 v-if="$device.isMobile">MOBILE DETECTED</h1>
     </div>
 </section>
 </template>
 
 <script>
     export default {
+        // layout: (ctx) => ctx.$device.isMobile ? 'mobile' : 'default'
         // async asyncData ({ $content }) {
         //     const movies = await $content('movies/movies').fetch()
         //     return { movies }

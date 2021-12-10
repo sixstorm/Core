@@ -1388,6 +1388,13 @@
     "webpack-node-externals" "^3.0.0"
     "webpackbar" "^4.0.0"
 
+"@nuxtjs/device@^2.1.0":
+  "integrity" "sha512-TYBdt1w2bmCCWp+MhgcBATZtqyUBi3nSdNpcLGILw5USLwCsC/yZtIkq9YisuEzuRnod9w/RZpoE80MxLftEuA=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/device/-/device-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "defu" "^3.2.2"
+
 "@nuxtjs/youch@^4.2.3":
   "integrity" "sha512-XiTWdadTwtmL/IGkNqbVe+dOlT+IMvcBu7TvKI7plWhVQeBCQ9iKhk3jgvVWFyiwL2yHJDlEwOM5v9oVES5Xmw=="
   "resolved" "https://registry.npmjs.org/@nuxtjs/youch/-/youch-4.2.3.tgz"

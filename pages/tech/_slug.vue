@@ -4,10 +4,10 @@
             <div class="columns is-centered">
                 <div class="column is-four-fifths">
                     <div v-if="Array.isArray(content)">
-                        <h1>Tech Articles</h1>
+                        <h1 class="has-text-centered-mobile">Tech Articles</h1>
                         <ul v-for="article of content" :key="article.slug">
                             <NuxtLink :to="{ name: 'tech-slug', params: { slug: article.slug } }">
-                                <h2>{{ article.title }}</h2>
+                                <h2 class="has-text-centered-mobile">{{ article.title }}</h2>
                             </NuxtLink>
                         </ul>
                     </div>

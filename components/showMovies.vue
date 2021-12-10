@@ -1,6 +1,6 @@
 <template>
     <div>
-        <table class="table is-bordered is-hoverable is-fullwidth is-size-5">
+        <table class="table is-bordered is-narrow is-hoverable is-fullwidth is-size-5">
             <thead>
                 <tr>
                     <th style="text-align:left">Title</th>
