@@ -10,7 +10,7 @@
             <tbody>
                 <tr v-for="movie in movies" :key="movie.title">
                     <td>{{ movie.title }}</td>
-                    <td>{{ movie.link }}</td>
+                    <td><a v-bind:href="movie.link">IMDB</a></td>
                 </tr>
             </tbody>
         </table>
