@@ -11,7 +11,7 @@
                     </ul>
                 </div>
                 <div v-else>
-                    <showBC v-bind:article="content"></showBC>
+                    <breadcrumbList v-bind:article="content" v-bind:title="title" v-bind:permalink="permalink"></breadcrumbList>
                     <show-article v-bind:article="content"></show-article>
                 </div>
             </div>
@@ -25,18 +25,12 @@
             const content = await $content('blog', params.slug).fetch()
             return { content }
         },
-        head() {
+        data() {
             return {
-                title: 'Blog'
+                title: 'Blog',
+                permalink: '/blog',
             }
         }
     }
 
 </script>
-
-<style>
-
-</style>
-
-
-
