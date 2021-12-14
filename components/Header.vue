@@ -18,7 +18,7 @@
     </div>
 
     <div class="navbar-menu" :class="{ 'is-active': isHamburgerOpen }">
-      <div class="navbar-start">
+      <div class="navbar-end">
         <Nuxt-Link to="/tech" class="navbar-item pr-6">Tech</Nuxt-Link>
         <Nuxt-Link to="/blog" class="navbar-item pr-6">Blog</Nuxt-Link>
         <Nuxt-Link to="/movies" class="navbar-item pr-6">Movies</Nuxt-Link>
