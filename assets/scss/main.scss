@@ -21,6 +21,8 @@ $content-heading-color: $spacecadet;
 // Navbar
 $navbar-item-hover-background-color: $independence;
 $navbar-item-hover-color: $mandarin;
+$navbar-item-active-color: $white;
+$navbar-item-active-background-color: $independence;
 
 // Table Settings
 $table-background-color: $spacecadet;
@@ -72,17 +74,7 @@ p {
 .navbar-item {
     font-size: 1.5rem;
     color: $white;
-}
-
-// Image Stuff
-.book_cover {
-    // width: 50%;
-    // height: 80%;
-    border: 1px $silver;
-}
-
-.current_book {
-    border: 1px $mandarin;
+    background-color: $spacecadet;
 }
 
 // Table
