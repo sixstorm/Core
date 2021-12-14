@@ -3,7 +3,7 @@
     <div class="columns is-centered">
         <div class="column is-four-fifths">
             <h1 class="has-text-centered-mobile">Movies I've Watched Recently</h1>
-            <showMovies />
+        <ShowMovies />
         </div>
     </div>
 </section>
