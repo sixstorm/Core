@@ -1,7 +1,12 @@
 <template>
   <nav class="navbar">
     <div class="navbar-brand">
-      <Nuxt-Link to="/" class="navbar-item pr-6">Core</Nuxt-Link>
+      <Nuxt-Link
+        to="/"
+        class="navbar-item pr-6"
+        @click.native="isHamburgerOpen = !isHamburgerOpen"
+        >Core</Nuxt-Link
+      >
       <a
         name="burger-menu"
         role="button"
