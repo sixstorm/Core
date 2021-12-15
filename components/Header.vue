@@ -19,11 +19,36 @@
 
     <div class="navbar-menu" :class="{ 'is-active': isHamburgerOpen }">
       <div class="navbar-end">
-        <Nuxt-Link to="/tech" class="navbar-item pr-6">Tech</Nuxt-Link>
-        <Nuxt-Link to="/blog" class="navbar-item pr-6">Blog</Nuxt-Link>
-        <Nuxt-Link to="/movies" class="navbar-item pr-6">Movies</Nuxt-Link>
-        <Nuxt-Link to="/books" class="navbar-item pr-6">Books</Nuxt-Link>
-        <Nuxt-Link to="/music" class="navbar-item pr-6">Music</Nuxt-Link>
+        <Nuxt-Link
+          to="/tech"
+          class="navbar-item pr-6"
+          @click.native="isHamburgerOpen = !isHamburgerOpen"
+          >Tech</Nuxt-Link
+        >
+        <Nuxt-Link
+          to="/blog"
+          class="navbar-item pr-6"
+          @click.native="isHamburgerOpen = !isHamburgerOpen"
+          >Blog</Nuxt-Link
+        >
+        <Nuxt-Link
+          to="/movies"
+          class="navbar-item pr-6"
+          @click.native="isHamburgerOpen = !isHamburgerOpen"
+          >Movies</Nuxt-Link
+        >
+        <Nuxt-Link
+          to="/books"
+          class="navbar-item pr-6"
+          @click.native="isHamburgerOpen = !isHamburgerOpen"
+          >Books</Nuxt-Link
+        >
+        <Nuxt-Link
+          to="/music"
+          class="navbar-item pr-6"
+          @click.native="isHamburgerOpen = !isHamburgerOpen"
+          >Music</Nuxt-Link
+        >
       </div>
     </div>
   </nav>
