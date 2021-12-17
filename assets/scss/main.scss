@@ -13,8 +13,8 @@ $mandarin: #ef8354;
 // Basic Settings
 $body-background-color: $spacecadet;
 $text: $white;
-$link: $silver;
-$link-visited: $independence;
+$link: $mandarin;
+$link-visited: $mandarin;
 $link-hover: $independence;
 $content-heading-color: $spacecadet;
 
@@ -32,21 +32,29 @@ $table-striped-row-even-background-color: $mandarin;
 $table-row-hover-background-color: $spacecadet;
 $table-head-background-color: $silver;
 
+// Breadcrumbs
+$breadcrumb-item-color: $silver;
+
 // Import bulma styles
 @import "~bulma";
 
-// # in Markdown
 h1 {
     color: $mandarin;
     font-size: 40px;
     padding-bottom: 1rem;
 }
 
-// ## in Markdown
+.nuxt-content h1 {
+    color: $mandarin;
+    font-size: 40px;
+    padding-bottom: 1rem;
+}
+
 h2 {
     color: $silver;
     font-size: 30px;
 }
+
 h3,
 h4 {
     a {
@@ -81,7 +89,3 @@ p {
     background-color: $spacecadet;
 }
 
-// Table
-th {
-    text-align: center;
-}

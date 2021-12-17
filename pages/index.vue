@@ -5,13 +5,15 @@
         <div class="column is-four-fifths">
           <!-- <img src="~/assets/minwall2.jpg" alt=""> -->
           <h1 class="has-text-centered-mobile">Latest Blog Post</h1>
-        <ul>
-          <li v-for="article of articles" :key="article.slug">
-            <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-              <h2 class="has-text-centered-mobile">{{ article.title }}</h2>
-            </NuxtLink>
-          </li>
-        </ul>
+          <ul>
+            <li v-for="article of articles" :key="article.slug">
+              <NuxtLink
+                :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+              >
+                <h2 class="has-text-centered-mobile">{{ article.title }}</h2>
+              </NuxtLink>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -23,7 +25,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('blog')
       //   .only(['title'])
-      .sortBy('createdat', 'desc')
+      .sortBy('date', 'desc')
       .limit(1)
       .fetch()
 
@@ -31,9 +33,9 @@ export default {
   },
 
   head() {
-            return {
-                title: 'Core'
-            };
-        }
+    return {
+      title: 'Core',
+    }
+  },
 }
 </script>

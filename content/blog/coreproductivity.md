@@ -1,7 +1,7 @@
 ---
 title: 'Personal Productivity'
 description: 'What I use to build Core'
-date: 12/16/2021 12:58:00 -0600 CST
+date: 12/16/2021 12:59:00 -0600 CST
 tags: ['productivity', 'blog', 'tech']
 ---
 
