@@ -4,7 +4,7 @@
       <ul>
         <li><Nuxt-Link to="/">Core</Nuxt-Link></li>
         <li>
-          <Nuxt-Link v-bind:to="permalink">{{ title }}</Nuxt-Link>
+          <Nuxt-Link v-bind:to="permalink">{{ parent }}</Nuxt-Link>
         </li>
         <li v-if="$device.isDesktop">
           <Nuxt-Link to="#">{{ article.title }}</Nuxt-Link>
@@ -16,6 +16,6 @@
 
 <script>
 export default {
-  props: ['article', 'title', 'permalink'],
+  props: ['article', 'parent', 'permalink'],
 }
 </script>

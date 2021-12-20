@@ -15,6 +15,7 @@
         <div v-else>
           <breadcrumbList
             v-bind:article="content"
+            v-bind:parent="parent"
             v-bind:title="title"
             v-bind:permalink="permalink"
           ></breadcrumbList>
@@ -33,13 +34,8 @@ export default {
   },
   data() {
     return {
-      title: 'Blog',
+      parent: 'Blog',
       permalink: '/blog',
-    }
-  },
-  head() {
-    return {
-      title: this.title,
     }
   },
 }
