@@ -28,8 +28,10 @@ I quickly found that this is not the way to think in the Linux world.  Many Linu
 
 The tools that I use:
 
+
 + RSync
 + SystemD Services and Timers
+
 
 First, RSync has built in SSH capabilities.  The trick is that you need to have an existing SSH Key Pair setup in order for it to work.  Then, you can specify your SSH key as an option in the RSync command.  My example below shows the proper command with a SSH Key Pair using default values:
 
@@ -88,6 +90,7 @@ Enable the timer:
 At this point, you have a timer scheduled to start the Steam Backup service daily at 12:00PM.  If you want to see the logs produced by either the timer or service, run `journalctl`:
 
 ```journalctl -S today -f -u SteamBackup.timer```
+
 ```journalctl -S today -f -u SteamBackup.service```
 
 # Conclusion
